@@ -53,7 +53,7 @@ Force castle updates
 #### Default value
 
 ```YAML
-users_castles_force: false
+users_castles_force: true
 ```
 
 ## Dependencies
