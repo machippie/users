@@ -20,6 +20,6 @@
 users: []
 
 # @var users_castles_force:description: Force castle updates
-users_castles_force: False
+users_castles_force: True
 
 ...
