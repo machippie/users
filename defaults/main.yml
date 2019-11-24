@@ -1,0 +1,22 @@
+# Standards: 0.1
+---
+# @var users:description: List of users to create
+# @var users:example: >
+# users:
+#   - name: thomas
+#     primary_group: staff
+#     shell: /bin/bash
+#     castles:
+#       - tboerger/homeshick-base
+#       - tboerger/homeshick-osx
+#     groups:
+#       - admin
+#     sshkeys:
+#       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINaQYR0/Oj6k1H03kshz2J7rlGCaDSuaGPhhOs9FcZfn thomas@odin
+# @end
+users: []
+
+# @var users_castles_force:description: Force castle updates
+users_castles_force: False
+
+...
