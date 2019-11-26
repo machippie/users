@@ -7,13 +7,13 @@ List of users to create
 
 #### Default value
 
-```YAML
+```yaml
 users: []
 ```
 
 #### Example usage
 
-```YAML
+```yaml
 users:
   - name: thomas
     primary_group: staff
@@ -36,7 +36,7 @@ Force castle updates
 
 #### Default value
 
-```YAML
+```yaml
 users_castles_force: true
 ```
 ## Dependencies
