@@ -30,6 +30,32 @@
   tags:
     - users
 
+- name: Install ohmyzsh repo
+  loop: "{{ users }}"
+  loop_control:
+    label: "{{ item.name }}"
+  when: item.ohmyzsh | default(False)
+  become: yes
+  become_user: "{{ item.name }}"
+  git:
+    repo: https://github.com/ohmyzsh/ohmyzsh.git
+    dest: "{{ item.home | default('/Users/' + item.name) }}/.oh-my-zsh"
+  tags:
+    - users
+
+- name: Install bashit repo
+  loop: "{{ users }}"
+  loop_control:
+    label: "{{ item.name }}"
+  when: item.bashit | default(False)
+  become: yes
+  become_user: "{{ item.name }}"
+  git:
+    repo: https://github.com/Bash-it/bash-it.git
+    dest: "{{ item.home | default('/Users/' + item.name) }}/.bash_it"
+  tags:
+    - users
+
 - name: Install homeshick base
   loop: "{{ users }}"
   loop_control:

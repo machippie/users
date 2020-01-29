@@ -16,6 +16,18 @@
 #       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINaQYR0/Oj6k1H03kshz2J7rlGCaDSuaGPhhOs9FcZfn tboerger@host1
 #       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC7oOi3qaDtfQVFhPKyd0Wk0C/y+QM71vtln8Rl44NlB tboerger@host2
 #       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFcPTmdo+7eK+8n2yE7Kx1vyQ4yJwHBngvQOt1MPhKhR tboerger@host3
+#   - name: buser
+#     primary_group: staff
+#     shell: /bin/bash
+#     bashit: True
+#     groups:
+#       - admin
+#   - name: zuser
+#     primary_group: staff
+#     shell: /bin/bazshsh
+#     ohmyzsh: True
+#     groups:
+#       - admin
 # @end
 users: []
 
